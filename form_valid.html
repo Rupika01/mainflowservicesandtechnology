@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-compatible" content="IE=edge">
+    
+<head>
+<style>
+
+input[type=Button]
+{width:210px;
+align:center;
+}
+</style>
+</head>
+<body bgcolor="#f1f1f1">
+<div align="center" style="padding:30px;spacing:30px";>
+<script type="text/javascript">  
+function validateForm() {
+
+var name=document.myForm.f_name.value;
+
+var status=false;  
+if(name==""){  
+document.getElementById("id1").innerHTML="img src='/unchecked.gif',enter name";  
+status=false;
+}else{  
+document.getElementById("id1").innerHTML="/checked.gif";  
+status=true;
+}
+}
+
+</script>
+
+
+
+<h1>Enter Details of Employees(slab)</h1>
+</div>
+<form name="myForm" action="C:/Users/Rupika%20Gugnani/OneDrive/Desktop/task1mains/validity.html">
+<table border="1" align="center">
+<tr>
+<td>
+<label>Employee_name</label></td>
+<td>
+<input type="text" name="f_name" required>
+</td>
+</tr>
+<tr>
+<td>
+<label>Employee_id</label></td>
+<td>
+<input type="number" id="id2" name="emp_id" value="101" min="101" max="110" required>
+</td>
+</tr>
+<tr>
+<td><label>Department_name</label>
+</td>
+<td><input type="text" id="id3" name="dep_name" required>
+</td> 
+</tr>
+<tr>
+<td><label>Date_of_Birth</label>
+</td>
+<td><input type="date" name="dob" id="dateofbirth" required>
+</td> 
+</tr>
+
+
+
+<tr>
+<td> <label>Job_title</label>
+</td>
+<td><input type="text" name="Job_title" required>
+</td>
+</tr> 
+
+<tr>
+<td>
+<label>Gender</label></td>
+<td>
+<input type="radio" name="gender" type="male" required>Male
+<input type="radio" name="gender" type="female" required>Female
+</td>
+</tr>
+
+<tr>
+<td> <label>Nationality</label>
+</td>
+<td><input type="text" name="Nationality" value="INDIAN" required>
+</td> </tr>
+
+
+<tr>
+<td> <label>Date_of_joining</label>
+</td>
+<td><input type="DATE" name="Date_of_joining" id="dateInput" required>
+</td> </tr>
+
+
+<tr>
+<td>
+<label>Salary</label></td>
+<td>
+<input type="number" name="Salary" value="15000" id="putSalary" min="15000" max="100000" required>
+</td>
+</tr>
+<tr>
+<td>
+<label>Performance_rating</label></td>
+<td>
+<input type="number" name="rating" value="1" id="performance" min="1" max="5" required>
+</td>
+</tr>
+<br><tr>
+<td colspan="2" align="center" bgcolor="grey">
+<button onclick="myFunction()">SUBMIT</button>
+</td>
+</tr>
+</form>
+
+</body>
+</html>
